@@ -1,0 +1,10 @@
+# Nmap 7.60 scan initiated Sat Dec  7 15:53:38 2019 as: nmap -sC -p 1-1000 -oA ./nmap/192.168.0 -T4 192.168.0.0-99
+Host: 192.168.0.1 ()	Status: Up
+Host: 192.168.0.1 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: filtered (997)
+Host: 192.168.0.3 ()	Status: Up
+Host: 192.168.0.3 ()	Status: Up
+Host: 192.168.0.31 ()	Status: Up
+Host: 192.168.0.31 ()	Status: Up
+Host: 192.168.0.33 ()	Status: Up
+Host: 192.168.0.33 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds//Samba smbd 4.3.11-Ubuntu/	Ignored State: closed (996)
+# Nmap done at Sat Dec  7 15:53:51 2019 -- 100 IP addresses (4 hosts up) scanned in 13.86 seconds

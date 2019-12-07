@@ -1,0 +1,70 @@
+# Nmap 7.60 scan initiated Sat Dec  7 15:53:38 2019 as: nmap -sC -p 1-1000 -oA ./nmap/192.168.0 -T4 192.168.0.0-99
+Nmap scan report for 192.168.0.1
+Host is up (0.00019s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+| ssh-hostkey: 
+|   4096 1a:21:de:18:6b:76:d1:67:1a:c2:1e:ba:ac:89:ac:ce (RSA)
+|_  256 b9:ef:a2:aa:ce:1f:96:ed:dd:6d:81:52:c9:de:86:cd (EdDSA)
+80/tcp  open  http
+|_http-title: Did not follow redirect to https://192.168.0.1/
+443/tcp open  https
+|_http-title: Login
+| ssl-cert: Subject: commonName=pfSense-5c998c4436ebe/organizationName=pfSense webConfigurator Self-Signed Certificate/stateOrProvinceName=State/countryName=US
+| Subject Alternative Name: DNS:pfSense-5c998c4436ebe
+| Not valid before: 2019-03-26T02:19:48
+|_Not valid after:  2024-09-15T02:19:48
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+MAC Address: 00:50:56:B0:E6:D2 (VMware)
+
+Nmap scan report for 192.168.0.3
+Host is up (0.000080s latency).
+All 1000 scanned ports on 192.168.0.3 are filtered
+MAC Address: 00:50:56:01:0D:E7 (VMware)
+
+Nmap scan report for 192.168.0.31
+Host is up (0.00042s latency).
+All 1000 scanned ports on 192.168.0.31 are closed
+MAC Address: 00:50:56:01:19:09 (VMware)
+
+Nmap scan report for 192.168.0.33
+Host is up (0.021s latency).
+Not shown: 996 closed ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+| ssh-hostkey: 
+|   2048 85:0d:23:2f:dc:4b:58:17:01:01:d9:5e:e5:9c:8e:fa (RSA)
+|   256 ab:ad:39:b9:82:7b:1d:64:d0:86:5d:92:c8:e4:d9:f8 (ECDSA)
+|_  256 f1:36:93:6a:cb:55:b8:0d:5a:7f:15:b4:0e:49:96:b6 (EdDSA)
+80/tcp  open  http
+|_http-title: Apache2 Ubuntu Default Page: It works
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+MAC Address: 00:50:56:01:19:0A (VMware)
+
+Host script results:
+|_clock-skew: mean: -29s, deviation: 0s, median: -29s
+|_nbstat: NetBIOS name: QUACKENBUSH, NetBIOS user: <unknown>, NetBIOS MAC: <unknown> (unknown)
+| smb-os-discovery: 
+|   OS: Windows 6.1 (Samba 4.3.11-Ubuntu)
+|   Computer name: quackenbush
+|   NetBIOS computer name: QUACKENBUSH\x00
+|   Domain name: \x00
+|   FQDN: quackenbush
+|_  System time: 2019-12-07T15:53:16-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2019-12-07 15:53:16
+|_  start_date: 1600-12-31 19:03:58
+
+# Nmap done at Sat Dec  7 15:53:51 2019 -- 100 IP addresses (4 hosts up) scanned in 13.86 seconds

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE nmaprun>
+<?xml-stylesheet href="file:///usr/bin/../share/nmap/nmap.xsl" type="text/xsl"?>
+<!-- Nmap 7.60 scan initiated Sat Dec  7 15:53:38 2019 as: nmap -sC -p 1-1000 -oA ./nmap/192.168.0 -T4 192.168.0.0-99 -->
+<nmaprun scanner="nmap" args="nmap -sC -p 1-1000 -oA ./nmap/192.168.0 -T4 192.168.0.0-99" start="1575752018" startstr="Sat Dec  7 15:53:38 2019" version="7.60" xmloutputversion="1.04">
+<scaninfo type="syn" protocol="tcp" numservices="1000" services="1-1000"/>
+<verbose level="0"/>
+<debugging level="0"/>
+<host starttime="1575752018" endtime="1575752031"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.1" addrtype="ipv4"/>
+<address addr="00:50:56:B0:E6:D2" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="997">
+<extrareasons reason="no-responses" count="997"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  4096 1a:21:de:18:6b:76:d1:67:1a:c2:1e:ba:ac:89:ac:ce (RSA)&#xa;  256 b9:ef:a2:aa:ce:1f:96:ed:dd:6d:81:52:c9:de:86:cd (EdDSA)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAACAQC/s7aBrs2eqpfXgh/T6eUP9dUW4X5tzucfAgQXBbm2LjO7mgKzeWkl/V7TdGh41d085B+Bn4oGpYFHFSgKQKJRF2AtSWtAXhx+bKhcf826GMtkJa0KH4TBarNZqI13Ns8bXbTHNFiZhZ/HNyHXK8X0Y0W82eWzqo0dg4n2O2ydqJZXYn06GMjNPFE4s5Xx049d2regsNmROom3vv7HqjH8xL+nV+3kdTIAItllaFa3LmcCgVhM/zdCgNObTum+nffdf0F02i6Rbp+Z5LUv1MYb+afoah2hBsM6amJElZb8dEMKsZZXfj1sp72V6/EAEB8qsBg9OQDM18ogJVU1rbY6pf2EZcJNdjZaSsnXtcLz5N1N9quIzubmw+F8UaZ9/DXeTtzC6EPCISWHxg9Kyt+oSlhbMboSHdHQU008/81DsC/Pfrt7al0/KVnwEw4loKh5nDeOZFmZ1eTQ00nKcBoIT4OzS+iUcit1d0OyOhg4XelGvXehQzMi7tMXZ80Ac5POTJ8deL9MAYWtfTH77cDO453qz8jOgvbCWvE4HLhgzAFJxRXlXVQftuE+7Q1bTvondypnBP1EE74Jl/xbK02lvidVzlEMojAL7EZ5PLNtqmbOoKd/KKEF+5WtAtug2OrOpAAE1TcmFgTL5uLw1gAh18B4mx4p0wWDz/KOskpddw==</elem>
+<elem key="bits">4096.0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">1a21de186b76d1671ac21ebaac89acce</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAIDBOk1wCnIb0JC9UMD5ohxR5im4bdV9hHHsq96rl8szs</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">b9efa2aace1f96eddd6d8152c9de86cd</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/><script id="http-title" output="Did not follow redirect to https://192.168.0.1/"><elem key="redirect_url">https://192.168.0.1/</elem>
+</script></port>
+<port protocol="tcp" portid="443"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="https" method="table" conf="3"/><script id="http-title" output="Login"><elem key="title">Login</elem>
+</script><script id="ssl-cert" output="Subject: commonName=pfSense-5c998c4436ebe/organizationName=pfSense webConfigurator Self-Signed Certificate/stateOrProvinceName=State/countryName=US&#xa;Subject Alternative Name: DNS:pfSense-5c998c4436ebe&#xa;Not valid before: 2019-03-26T02:19:48&#xa;Not valid after:  2024-09-15T02:19:48"><table key="subject">
+<elem key="emailAddress">admin@pfSense.localdomain</elem>
+<elem key="localityName">Locality</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">pfSense webConfigurator Self-Signed Certificate</elem>
+<elem key="commonName">pfSense-5c998c4436ebe</elem>
+<elem key="stateOrProvinceName">State</elem>
+</table>
+<table key="issuer">
+<elem key="emailAddress">admin@pfSense.localdomain</elem>
+<elem key="localityName">Locality</elem>
+<elem key="countryName">US</elem>
+<elem key="organizationName">pfSense webConfigurator Self-Signed Certificate</elem>
+<elem key="commonName">pfSense-5c998c4436ebe</elem>
+<elem key="stateOrProvinceName">State</elem>
+</table>
+<table key="pubkey">
+<elem key="exponent">userdata: 0x56311bef1758</elem>
+<elem key="bits">2048</elem>
+<elem key="type">rsa</elem>
+</table>
+<table key="extensions">
+<table>
+<elem key="name">X509v3 Basic Constraints</elem>
+<elem key="value">CA:FALSE</elem>
+</table>
+<table>
+<elem key="name">Netscape Cert Type</elem>
+<elem key="value">SSL Server</elem>
+</table>
+<table>
+<elem key="name">X509v3 Key Usage</elem>
+<elem key="value">Digital Signature, Key Encipherment</elem>
+</table>
+<table>
+<elem key="name">Netscape Comment</elem>
+<elem key="value">OpenSSL Generated Server Certificate</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Key Identifier</elem>
+<elem key="value">89:00:16:07:BF:E8:40:DC:65:BA:2B:02:43:35:2F:A6:16:2E:1A:4C</elem>
+</table>
+<table>
+<elem key="name">X509v3 Authority Key Identifier</elem>
+<elem key="value">keyid:89:00:16:07:BF:E8:40:DC:65:BA:2B:02:43:35:2F:A6:16:2E:1A:4C&#xa;DirName:/C=US/ST=State/L=Locality/O=pfSense webConfigurator Self-Signed Certificate/emailAddress=admin@pfSense.localdomain/CN=pfSense-5c998c4436ebe&#xa;serial:00&#xa;</elem>
+</table>
+<table>
+<elem key="name">X509v3 Extended Key Usage</elem>
+<elem key="value">TLS Web Server Authentication, 1.3.6.1.5.5.8.2.2</elem>
+</table>
+<table>
+<elem key="name">X509v3 Subject Alternative Name</elem>
+<elem key="value">DNS:pfSense-5c998c4436ebe</elem>
+</table>
+</table>
+<elem key="sig_algo">sha256WithRSAEncryption</elem>
+<table key="validity">
+<elem key="notBefore">2019-03-26T02:19:48</elem>
+<elem key="notAfter">2024-09-15T02:19:48</elem>
+</table>
+<elem key="md5">ffdccb7e82edbc66778cab8c2d728b9d</elem>
+<elem key="sha1">c95002b9f91bbd72c2e84a24b9a7928dff59d74a</elem>
+<elem key="pem">-&#45;&#45;&#45;&#45;BEGIN CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;MIIFjzCCBHegAwIBAgIBADANBgkqhkiG9w0BAQsFADCBtDELMAkGA1UEBhMCVVMx&#xa;DjAMBgNVBAgTBVN0YXRlMREwDwYDVQQHEwhMb2NhbGl0eTE4MDYGA1UEChMvcGZT&#xa;ZW5zZSB3ZWJDb25maWd1cmF0b3IgU2VsZi1TaWduZWQgQ2VydGlmaWNhdGUxKDAm&#xa;BgkqhkiG9w0BCQEWGWFkbWluQHBmU2Vuc2UubG9jYWxkb21haW4xHjAcBgNVBAMT&#xa;FXBmU2Vuc2UtNWM5OThjNDQzNmViZTAeFw0xOTAzMjYwMjE5NDhaFw0yNDA5MTUw&#xa;MjE5NDhaMIG0MQswCQYDVQQGEwJVUzEOMAwGA1UECBMFU3RhdGUxETAPBgNVBAcT&#xa;CExvY2FsaXR5MTgwNgYDVQQKEy9wZlNlbnNlIHdlYkNvbmZpZ3VyYXRvciBTZWxm&#xa;LVNpZ25lZCBDZXJ0aWZpY2F0ZTEoMCYGCSqGSIb3DQEJARYZYWRtaW5AcGZTZW5z&#xa;ZS5sb2NhbGRvbWFpbjEeMBwGA1UEAxMVcGZTZW5zZS01Yzk5OGM0NDM2ZWJlMIIB&#xa;IjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAvqsXGox9iOoICZ3ZM444Tp1a&#xa;inVHIul89qoC+ntrce3SAVAv5E/iwd27C5qzE8AG9F87rsj2JxrFv9tD8L3ARF0e&#xa;sb+daCOS09xlhOSLkNrecGjPc58vtFDq7tFSBNN18lz2mH/o8DT8thV8MIO0BDt2&#xa;UMKacoQ3EAfH7G918sPz/EvU1zX3K2S/7hxE7tkeFFS8xXgDCKkZ6ojcqG05ssG8&#xa;y3+XCbEbb0aKRC40rRKUSYIdenAZluFhzW4hiUZPj46b86FyiNnR3PrdhvhM2LhC&#xa;W5Zs3BM3GpZJClSgniQua4+tW3fjhZYYJn0zow4XdZYdCHjWR0j+IHrbxooeAwID&#xa;AQABo4IBqDCCAaQwCQYDVR0TBAIwADARBglghkgBhvhCAQEEBAMCBkAwCwYDVR0P&#xa;BAQDAgWgMDMGCWCGSAGG+EIBDQQmFiRPcGVuU1NMIEdlbmVyYXRlZCBTZXJ2ZXIg&#xa;Q2VydGlmaWNhdGUwHQYDVR0OBBYEFIkAFge/6EDcZborAkM1L6YWLhpMMIHhBgNV&#xa;HSMEgdkwgdaAFIkAFge/6EDcZborAkM1L6YWLhpMoYG6pIG3MIG0MQswCQYDVQQG&#xa;EwJVUzEOMAwGA1UECBMFU3RhdGUxETAPBgNVBAcTCExvY2FsaXR5MTgwNgYDVQQK&#xa;Ey9wZlNlbnNlIHdlYkNvbmZpZ3VyYXRvciBTZWxmLVNpZ25lZCBDZXJ0aWZpY2F0&#xa;ZTEoMCYGCSqGSIb3DQEJARYZYWRtaW5AcGZTZW5zZS5sb2NhbGRvbWFpbjEeMBwG&#xa;A1UEAxMVcGZTZW5zZS01Yzk5OGM0NDM2ZWJlggEAMB0GA1UdJQQWMBQGCCsGAQUF&#xa;BwMBBggrBgEFBQgCAjAgBgNVHREEGTAXghVwZlNlbnNlLTVjOTk4YzQ0MzZlYmUw&#xa;DQYJKoZIhvcNAQELBQADggEBAFuyABkf5BxWHgSrfPTQ2HScS0ToqJTMjYksuxIn&#xa;ymk1q34deDTJyYP/LW4EJp91QS7ox2iXt+2vswQ6JEUEjmTnHfxFW6KaIGGlJ4ui&#xa;515OhMj+iZuuWyGHP+XO90NSUnykFjVhpI4jl0MCwEHdQFXODK9jB4ayM/Ve4iN4&#xa;AX9n6PgqfsmZUQ0yfQga7pOLUSpaWYP4PO6V++1U/VsKCsL0A8Pm7oyntRERJIKD&#xa;yfnB3OJP4/PkF5Vep8ixBb0TXvK77moYQ9NLZtI3NDuxDhxE1ljDXGAzPJwl44OG&#xa;EwdbefLHUVOppxNz1KmZgS0p0gQfuURXnknOmKh06VF44IE=&#xa;-&#45;&#45;&#45;&#45;END CERTIFICATE-&#45;&#45;&#45;&#45;&#xa;</elem>
+</script><script id="ssl-date" output="TLS randomness does not represent time"></script><script id="tls-nextprotoneg" output="&#xa;  http/1.1"><elem>http/1.1</elem>
+</script></port>
+</ports>
+<times srtt="189" rttvar="1343" to="100000"/>
+</host>
+<host starttime="1575752018" endtime="1575752031"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.3" addrtype="ipv4"/>
+<address addr="00:50:56:01:0D:E7" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="filtered" count="1000">
+<extrareasons reason="no-responses" count="1000"/>
+</extraports>
+</ports>
+<times srtt="80" rttvar="5000" to="100000"/>
+</host>
+<host starttime="1575752018" endtime="1575752031"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.31" addrtype="ipv4"/>
+<address addr="00:50:56:01:19:09" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="1000">
+<extrareasons reason="resets" count="1000"/>
+</extraports>
+</ports>
+<times srtt="422" rttvar="118" to="100000"/>
+</host>
+<host starttime="1575752018" endtime="1575752031"><status state="up" reason="arp-response" reason_ttl="0"/>
+<address addr="192.168.0.33" addrtype="ipv4"/>
+<address addr="00:50:56:01:19:0A" addrtype="mac" vendor="VMware"/>
+<hostnames>
+</hostnames>
+<ports><extraports state="closed" count="996">
+<extrareasons reason="resets" count="996"/>
+</extraports>
+<port protocol="tcp" portid="22"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="ssh" method="table" conf="3"/><script id="ssh-hostkey" output="&#xa;  2048 85:0d:23:2f:dc:4b:58:17:01:01:d9:5e:e5:9c:8e:fa (RSA)&#xa;  256 ab:ad:39:b9:82:7b:1d:64:d0:86:5d:92:c8:e4:d9:f8 (ECDSA)&#xa;  256 f1:36:93:6a:cb:55:b8:0d:5a:7f:15:b4:0e:49:96:b6 (EdDSA)"><table>
+<elem key="key">AAAAB3NzaC1yc2EAAAADAQABAAABAQDl64shioXtZl95aDvWR5BA8X7pgR2SJh6AGAG3JAGsrsdIZc28H/oXNZU+UGWGQwyl8SLmTK+75gY5e2KpNyXaXsl+XEkkJKy/RTFGLvTunVRK+0+vr1tPE9LhSAhMKe3fWlRYoU+1qqSPHi4Xj6d60PbtOOCFgQNFSjS8ZfLAj8cHczcwjtsbwzFGsp41zmOdQG3Pk3/+bnVW0Wrkv510CQ5ed/pA/XH9Hj8cSMnxlIC/rwbdWepVsSxzLWRyAfG2m9IHu3UrVyNRBaSLBjo6Oc1J1SleX8iZVh5HYMvp44RnZ1u7QLhSnB0CfFRFhyaWMz92Ggt8qAEDl1lmGA8l</elem>
+<elem key="bits">2048.0</elem>
+<elem key="type">ssh-rsa</elem>
+<elem key="fingerprint">850d232fdc4b58170101d95ee59c8efa</elem>
+</table>
+<table>
+<elem key="key">AAAAE2VjZHNhLXNoYTItbmlzdHAyNTYAAAAIbmlzdHAyNTYAAABBBLXvCCpnSl/McOaLvTreupQ9PjOVv63Oon6187/BruGg+TzG+34OY+g1xPmrpJDfAVQR9EIocplN+94KUlkBZEs=</elem>
+<elem key="bits">256</elem>
+<elem key="type">ecdsa-sha2-nistp256</elem>
+<elem key="fingerprint">abad39b9827b1d64d0865d92c8e4d9f8</elem>
+</table>
+<table>
+<elem key="key">AAAAC3NzaC1lZDI1NTE5AAAAINzzL3CkEKw8welvlhQdrbaP/19OfJENVo8t3dC2VILD</elem>
+<elem key="bits">256</elem>
+<elem key="type">ssh-ed25519</elem>
+<elem key="fingerprint">f136936acb55b80d5a7f15b40e4996b6</elem>
+</table>
+</script></port>
+<port protocol="tcp" portid="80"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="http" method="table" conf="3"/><script id="http-title" output="Apache2 Ubuntu Default Page: It works"><elem key="title">Apache2 Ubuntu Default Page: It works</elem>
+</script></port>
+<port protocol="tcp" portid="139"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="netbios-ssn" method="table" conf="3"/></port>
+<port protocol="tcp" portid="445"><state state="open" reason="syn-ack" reason_ttl="64"/><service name="microsoft-ds" product="Samba smbd" version="4.3.11-Ubuntu" method="probed" conf="10"/></port>
+</ports>
+<hostscript><script id="clock-skew" output="mean: -29s, deviation: 0s, median: -29s"><elem key="median">-29</elem>
+<elem key="stddev">0</elem>
+<elem key="mean">-29</elem>
+</script><script id="nbstat" output="NetBIOS name: QUACKENBUSH, NetBIOS user: &lt;unknown&gt;, NetBIOS MAC: &lt;unknown&gt; (unknown)"><elem key="server_name">QUACKENBUSH</elem>
+<table key="mac">
+<elem key="address">&lt;unknown&gt;</elem>
+<elem key="manuf">unknown</elem>
+</table>
+<elem key="user">&lt;unknown&gt;</elem>
+<table key="names">
+<table>
+<elem key="flags">1024</elem>
+<elem key="name">QUACKENBUSH</elem>
+<elem key="suffix">0</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="name">QUACKENBUSH</elem>
+<elem key="suffix">3</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="name">QUACKENBUSH</elem>
+<elem key="suffix">32</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="name">\x01\x02__MSBROWSE__\x02</elem>
+<elem key="suffix">1</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="name">METROTRANSIT</elem>
+<elem key="suffix">0</elem>
+</table>
+<table>
+<elem key="flags">1024</elem>
+<elem key="name">METROTRANSIT</elem>
+<elem key="suffix">29</elem>
+</table>
+<table>
+<elem key="flags">33792</elem>
+<elem key="name">METROTRANSIT</elem>
+<elem key="suffix">30</elem>
+</table>
+</table>
+<table key="statistics">
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+<elem>00 00 00 00 00 00 00 00 00 00 00 00 00 00</elem>
+</table>
+</script><script id="smb-os-discovery" output="&#xa;  OS: Windows 6.1 (Samba 4.3.11-Ubuntu)&#xa;  Computer name: quackenbush&#xa;  NetBIOS computer name: QUACKENBUSH\x00&#xa;  Domain name: \x00&#xa;  FQDN: quackenbush&#xa;  System time: 2019-12-07T15:53:16-05:00&#xa;"><elem key="os">Windows 6.1</elem>
+<elem key="lanmanager">Samba 4.3.11-Ubuntu</elem>
+<elem key="server">QUACKENBUSH\x00</elem>
+<elem key="date">2019-12-07T15:53:16-05:00</elem>
+<elem key="fqdn">quackenbush</elem>
+<elem key="domain_dns">\x00</elem>
+<elem key="workgroup">METROTRANSIT\x00</elem>
+</script><script id="smb-security-mode" output="&#xa;  account_used: guest&#xa;  authentication_level: user&#xa;  challenge_response: supported&#xa;  message_signing: disabled (dangerous, but default)"><elem key="account_used">guest</elem>
+<elem key="authentication_level">user</elem>
+<elem key="challenge_response">supported</elem>
+<elem key="message_signing">disabled</elem>
+</script><script id="smb2-security-mode" output="&#xa;  2.02: &#xa;    Message signing enabled but not required"><table key="2.02">
+<elem>Message signing enabled but not required</elem>
+</table>
+</script><script id="smb2-time" output="&#xa;  date: 2019-12-07 15:53:16&#xa;  start_date: 1600-12-31 19:03:58"><elem key="date">2019-12-07 15:53:16</elem>
+<elem key="start_date">1600-12-31 19:03:58</elem>
+</script></hostscript><times srtt="20687" rttvar="22563" to="110939"/>
+</host>
+<runstats><finished time="1575752031" timestr="Sat Dec  7 15:53:51 2019" elapsed="13.86" summary="Nmap done at Sat Dec  7 15:53:51 2019; 100 IP addresses (4 hosts up) scanned in 13.86 seconds" exit="success"/><hosts up="4" down="96" total="100"/>
+</runstats>
+</nmaprun>

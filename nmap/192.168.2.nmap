@@ -1,0 +1,132 @@
+# Nmap 7.60 scan initiated Sat Dec  7 15:52:02 2019 as: nmap -sC -p 1-1000 -oA ./nmap/192.168.2 -T4 192.168.2.0/24
+Nmap scan report for 192.168.2.1
+Host is up (0.00049s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+| ssh-hostkey: 
+|   4096 1a:21:de:18:6b:76:d1:67:1a:c2:1e:ba:ac:89:ac:ce (RSA)
+|_  256 b9:ef:a2:aa:ce:1f:96:ed:dd:6d:81:52:c9:de:86:cd (EdDSA)
+80/tcp  open  http
+|_http-title: Did not follow redirect to https://192.168.2.1/
+443/tcp open  https
+|_http-title: Login
+| ssl-cert: Subject: commonName=pfSense-5c998c4436ebe/organizationName=pfSense webConfigurator Self-Signed Certificate/stateOrProvinceName=State/countryName=US
+| Subject Alternative Name: DNS:pfSense-5c998c4436ebe
+| Not valid before: 2019-03-26T02:19:48
+|_Not valid after:  2024-09-15T02:19:48
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+
+Nmap scan report for 192.168.2.15
+Host is up (0.00075s latency).
+Not shown: 999 closed ports
+PORT    STATE SERVICE
+139/tcp open  netbios-ssn
+
+Host script results:
+|_nbstat: NetBIOS name: GARAGE3, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:01:17:4d (VMware)
+|_smb2-security-mode: SMB: Couldn't find a NetBIOS name that works for the server. Sorry!
+|_smb2-time: ERROR: Script execution failed (use -d to debug)
+
+Nmap scan report for 192.168.2.25
+Host is up (0.00041s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_clock-skew: mean: -30s, deviation: 0s, median: -30s
+| smb-os-discovery: 
+|   OS: Windows 10 Enterprise 15063 (Windows 10 Enterprise 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: vega
+|   NetBIOS computer name: VEGA\x00
+|   Domain name: metrotransit.enterprise
+|   Forest name: metrotransit.enterprise
+|   FQDN: vega.metrotransit.enterprise
+|_  System time: 2019-12-07T12:51:48-08:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2019-12-07 15:51:46
+|_  start_date: 2019-12-06 14:31:07
+
+Nmap scan report for 192.168.2.26
+Host is up (0.0012s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_clock-skew: mean: -29s, deviation: 0s, median: -29s
+|_nbstat: NetBIOS name: HARRISON, NetBIOS user: <unknown>, NetBIOS MAC: 00:50:56:01:17:4c (VMware)
+| smb-os-discovery: 
+|   OS: Windows 7 Enterprise 7601 Service Pack 1 (Windows 7 Enterprise 6.1)
+|   OS CPE: cpe:/o:microsoft:windows_7::sp1
+|   Computer name: harrison
+|   NetBIOS computer name: HARRISON\x00
+|   Domain name: metrotransit.enterprise
+|   Forest name: metrotransit.enterprise
+|   FQDN: harrison.metrotransit.enterprise
+|_  System time: 2019-12-07T15:51:46-05:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2019-12-07 15:51:45
+|_  start_date: 2019-12-05 14:49:29
+
+Nmap scan report for 192.168.2.27
+Host is up (0.00054s latency).
+Not shown: 997 closed ports
+PORT    STATE SERVICE
+135/tcp open  msrpc
+139/tcp open  netbios-ssn
+445/tcp open  microsoft-ds
+
+Host script results:
+|_clock-skew: mean: -30s, deviation: 0s, median: -30s
+| smb-os-discovery: 
+|   OS: Windows 10 Enterprise 15063 (Windows 10 Enterprise 6.3)
+|   OS CPE: cpe:/o:microsoft:windows_10::-
+|   Computer name: smith
+|   NetBIOS computer name: SMITH\x00
+|   Domain name: metrotransit.enterprise
+|   Forest name: metrotransit.enterprise
+|   FQDN: smith.metrotransit.enterprise
+|_  System time: 2019-12-07T12:51:51-08:00
+| smb-security-mode: 
+|   account_used: guest
+|   authentication_level: user
+|   challenge_response: supported
+|_  message_signing: disabled (dangerous, but default)
+| smb2-security-mode: 
+|   2.02: 
+|_    Message signing enabled but not required
+| smb2-time: 
+|   date: 2019-12-07 15:51:52
+|_  start_date: 2019-11-01 15:18:18
+
+Post-scan script results:
+| clock-skew: 
+|   -30s: 
+|     192.168.2.25
+|_    192.168.2.27
+# Nmap done at Sat Dec  7 15:53:24 2019 -- 256 IP addresses (5 hosts up) scanned in 82.62 seconds

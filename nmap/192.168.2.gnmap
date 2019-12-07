@@ -1,0 +1,12 @@
+# Nmap 7.60 scan initiated Sat Dec  7 15:52:02 2019 as: nmap -sC -p 1-1000 -oA ./nmap/192.168.2 -T4 192.168.2.0/24
+Host: 192.168.2.1 ()	Status: Up
+Host: 192.168.2.1 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: filtered (997)
+Host: 192.168.2.15 ()	Status: Up
+Host: 192.168.2.15 ()	Ports: 139/open/tcp//netbios-ssn///	Ignored State: closed (999)
+Host: 192.168.2.25 ()	Status: Up
+Host: 192.168.2.25 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds//Windows 10 Enterprise 15063 microsoft-ds/	Ignored State: closed (997)
+Host: 192.168.2.26 ()	Status: Up
+Host: 192.168.2.26 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds//Windows 7 Enterprise 7601 Service Pack 1 microsoft-ds/	Ignored State: closed (997)
+Host: 192.168.2.27 ()	Status: Up
+Host: 192.168.2.27 ()	Ports: 135/open/tcp//msrpc///, 139/open/tcp//netbios-ssn///, 445/open/tcp//microsoft-ds//Windows 10 Enterprise 15063 microsoft-ds/	Ignored State: closed (997)
+# Nmap done at Sat Dec  7 15:53:24 2019 -- 256 IP addresses (5 hosts up) scanned in 82.62 seconds

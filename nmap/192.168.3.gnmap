@@ -1,0 +1,10 @@
+# Nmap 7.60 scan initiated Sat Dec  7 15:53:53 2019 as: nmap -sC -p 1-1000 -oA ./nmap/192.168.3 -T4 192.168.3.0/24
+Host: 192.168.3.1 ()	Status: Up
+Host: 192.168.3.1 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///, 443/open/tcp//https///	Ignored State: filtered (997)
+Host: 192.168.3.2 ()	Status: Up
+Host: 192.168.3.2 ()	Ports: 22/open/tcp//ssh///	Ignored State: closed (999)
+Host: 192.168.3.17 ()	Status: Up
+Host: 192.168.3.17 ()	Ports: 22/open/tcp//ssh///, 80/closed/tcp//http///	Ignored State: filtered (998)
+Host: 192.168.3.20 ()	Status: Up
+Host: 192.168.3.20 ()	Ports: 22/open/tcp//ssh///, 80/open/tcp//http///	Ignored State: closed (998)
+# Nmap done at Sat Dec  7 15:54:03 2019 -- 256 IP addresses (4 hosts up) scanned in 10.48 seconds

@@ -1,0 +1,64 @@
+# Nmap 7.60 scan initiated Sat Dec  7 17:09:19 2019 as: nmap -oN smb-protocol-smbhosts -p445 --script smb-protocols -iL smbhosts.txt
+Nmap scan report for 192.168.0.33
+Host is up (0.0011s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+MAC Address: 00:50:56:01:19:0A (VMware)
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|     2.10
+|     3.00
+|     3.02
+|_    3.11
+
+Nmap scan report for 192.168.2.25
+Host is up (0.00090s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|     2.10
+|     3.00
+|     3.02
+|_    3.11
+
+Nmap scan report for 192.168.2.26
+Host is up (0.00094s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|_    2.10
+
+Nmap scan report for 192.168.2.27
+Host is up (0.0011s latency).
+
+PORT    STATE SERVICE
+445/tcp open  microsoft-ds
+
+Host script results:
+| smb-protocols: 
+|   dialects: 
+|     NT LM 0.12 (SMBv1) [dangerous, but default]
+|     2.02
+|     2.10
+|     3.00
+|     3.02
+|_    3.11
+
+# Nmap done at Sat Dec  7 17:09:46 2019 -- 4 IP addresses (4 hosts up) scanned in 26.25 seconds

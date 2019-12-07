@@ -1,0 +1,67 @@
+# Nmap 7.60 scan initiated Sat Dec  7 15:53:53 2019 as: nmap -sC -p 1-1000 -oA ./nmap/192.168.3 -T4 192.168.3.0/24
+Nmap scan report for 192.168.3.1
+Host is up (0.0014s latency).
+Not shown: 997 filtered ports
+PORT    STATE SERVICE
+22/tcp  open  ssh
+| ssh-hostkey: 
+|   4096 1a:21:de:18:6b:76:d1:67:1a:c2:1e:ba:ac:89:ac:ce (RSA)
+|_  256 b9:ef:a2:aa:ce:1f:96:ed:dd:6d:81:52:c9:de:86:cd (EdDSA)
+80/tcp  open  http
+|_http-title: Did not follow redirect to https://192.168.3.1/
+443/tcp open  https
+|_http-title: Login
+| ssl-cert: Subject: commonName=pfSense-5c998c4436ebe/organizationName=pfSense webConfigurator Self-Signed Certificate/stateOrProvinceName=State/countryName=US
+| Subject Alternative Name: DNS:pfSense-5c998c4436ebe
+| Not valid before: 2019-03-26T02:19:48
+|_Not valid after:  2024-09-15T02:19:48
+|_ssl-date: TLS randomness does not represent time
+| tls-nextprotoneg: 
+|_  http/1.1
+
+Nmap scan report for 192.168.3.2
+Host is up (0.00081s latency).
+Not shown: 999 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   2048 2c:72:1e:5b:c4:31:c7:ef:1d:a7:57:a8:63:94:6b:89 (RSA)
+|   256 e5:8b:c2:ed:84:39:51:8c:b9:0b:6c:b5:59:78:94:a9 (ECDSA)
+|_  256 a2:41:40:72:47:96:1a:6a:79:c8:46:ab:d5:d1:8d:3e (EdDSA)
+
+Nmap scan report for 192.168.3.17
+Host is up (0.0013s latency).
+Not shown: 998 filtered ports
+PORT   STATE  SERVICE
+22/tcp open   ssh
+| ssh-hostkey: 
+|   1024 c7:51:72:89:22:7d:b3:12:77:bd:f4:79:57:9d:a3:a0 (DSA)
+|_  2048 9f:1e:ed:9e:2c:30:e3:bf:58:bc:d5:e0:20:f2:2b:9d (RSA)
+80/tcp closed http
+
+Nmap scan report for 192.168.3.20
+Host is up (0.00080s latency).
+Not shown: 998 closed ports
+PORT   STATE SERVICE
+22/tcp open  ssh
+| ssh-hostkey: 
+|   2048 2c:72:1e:5b:c4:31:c7:ef:1d:a7:57:a8:63:94:6b:89 (RSA)
+|   256 e5:8b:c2:ed:84:39:51:8c:b9:0b:6c:b5:59:78:94:a9 (ECDSA)
+|_  256 a2:41:40:72:47:96:1a:6a:79:c8:46:ab:d5:d1:8d:3e (EdDSA)
+80/tcp open  http
+| http-robots.txt: 1 disallowed entry 
+|_/
+|_http-title: Site doesn't have a title (text/html;charset=utf-8).
+
+Post-scan script results:
+| ssh-hostkey: Possible duplicate hosts
+| Key 256 e5:8b:c2:ed:84:39:51:8c:b9:0b:6c:b5:59:78:94:a9 (ECDSA) used by:
+|   192.168.3.2
+|   192.168.3.20
+| Key 2048 2c:72:1e:5b:c4:31:c7:ef:1d:a7:57:a8:63:94:6b:89 (RSA) used by:
+|   192.168.3.2
+|   192.168.3.20
+| Key 256 a2:41:40:72:47:96:1a:6a:79:c8:46:ab:d5:d1:8d:3e (EdDSA) used by:
+|   192.168.3.2
+|_  192.168.3.20
+# Nmap done at Sat Dec  7 15:54:03 2019 -- 256 IP addresses (4 hosts up) scanned in 10.48 seconds
