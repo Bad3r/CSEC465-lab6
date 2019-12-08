@@ -1,0 +1,8 @@
+{   "ip": "192.168.3.17",   "ports": [ {"port": 22, "proto": "tcp", "status": "open", "reason": "syn-ack", "ttl": 63} ] },
+{   "ip": "192.168.3.20",   "ports": [ {"port": 80, "proto": "tcp", "status": "open", "reason": "syn-ack", "ttl": 63} ] },
+{   "ip": "192.168.3.1",   "ports": [ {"port": 80, "proto": "tcp", "status": "open", "reason": "syn-ack", "ttl": 64} ] },
+{   "ip": "192.168.3.1",   "ports": [ {"port": 443, "proto": "tcp", "status": "open", "reason": "syn-ack", "ttl": 64} ] },
+{   "ip": "192.168.3.1",   "ports": [ {"port": 22, "proto": "tcp", "status": "open", "reason": "syn-ack", "ttl": 64} ] },
+{   "ip": "192.168.3.2",   "ports": [ {"port": 22, "proto": "tcp", "status": "open", "reason": "syn-ack", "ttl": 63} ] },
+{   "ip": "192.168.3.20",   "ports": [ {"port": 22, "proto": "tcp", "status": "open", "reason": "syn-ack", "ttl": 63} ] },
+{finished: 1}
